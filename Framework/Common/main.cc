@@ -17,10 +17,26 @@ int main(int argc, char** argv) {
     return ret;
   }
 
+  std::cout << "Game begin!" << std::endl;
+
   while (!g_pApp->IsQuit()) {
     g_pApp->Tick();   // drive 
   }
 
   g_pApp->Finalize();
-
+  
 }
+
+
+/*
+继承关系：(上方是base)
+
+IRuntimeModule
+   
+IApplication
+
+BaseApplication
+
+
+
+*/

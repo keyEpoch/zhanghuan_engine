@@ -1,1 +1,5 @@
-add_library(Common BaseApplication.cc main.cc)
+add_library(Common 
+BaseApplication.cc 
+GraphicsManager.cc 
+main.cc
+)
